@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="description" content="Tricks for HTML, CSS, JS coding">
+        <meta property="og:url" content="">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="Tricky-CSS DEMO for Deft Slider">
+        <meta property="og:site_name" content="Tricky-CSS DEMO for Deft Slider">
+        <meta property="og:locale" content="ru_RU">
+        <meta property="og:type" content="article">
+          
+        <title>Tricky CSS | Deft Slider DEMO</title>
+      
+    <!-- CSS Styles -->
+        <link rel="stylesheet" href="http://tricky-css.com/resourses/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://tricky-css.com/css/reset.css" type="text/css">     
+        <link rel="stylesheet" href="http://tricky-css.com/css/style.css" type="text/css">
+        <link rel="stylesheet" href="" type="text/css">
+    <!-- end css style -->
+
+
+    <!--[if IE 8]><html class="ie ie8"> <![endif]-->
+    <!--[if IE 9]><html class="ie ie9"> <![endif]-->    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<!-- ========== RESOURSES ========== -->
+    <link rel="stylesheet" href="css/slider.css" type="text/css">
+    <script src="js/slider.js" type="text/javascript"></script>
+
+</head>
+<body>
+    <header><div><h2>Self-contained JS & CSS slider/carousel</h2></div><h1>Tricky CSS | Deft Slider DEMO</h1></header>
+    <nav>
+        <a href="http://tricky-css.com" target="_blank">main</a>
+        <a href="http://tricky-css.com/projects.html" target="_blank">projects</a>
+        <div></div>
+    </nav>
+    <main>
+        <section>
+            <div class="sectionTitle">DEMO</div>
+            <div id="promo" title="700" class="deftSlider">
+                <div style="margin: auto 0;"><center><h3>Interactive CSS Slider #1</h3><h4><-- Click buttons to slide Me --></center></div>
+                <div style="margin: auto 0;"><center><h3>Interactive CSS Slider #2</h3><h4><-- Click buttons to slide Me --></center></div>
+                <div style="margin: auto 0;"><center><h3>Interactive CSS Slider #3</h3><h4><-- Click buttons to slide Me --></center></div>
+                <div style="margin: auto 0;"><center><h3>Interactive CSS Slider #4</h3><h4><-- Click buttons to slide Me --></center></div>
+            </div>
+        </section>
+        <section>
+            <div class="sectionTitle">Declaration & Implementation</div>
+            <p>For using Deft-slider in your page you should connect two files to your site. JS part contain core for autonomous employment of functionality. CSS part contain basic styles for main elements of module structure.<br>Follow this steps to add Deft-slider to your site/page/blog:<br></p>
+            <ol>
+                <li>Download all this files (find it at the bottom of page in "Files" block).</li>
+                <li>Extract archieve and arrange each file in typical folder on your site host (JS -> into folder with JavaScript files and CSS -> on folder with stylesheets).</li>
+                <li>Append to each page, when will be used Deft-slider, next code before closing &lt/head&gt tag.
+                    <div class="codeBlock">               
+                    &lt;link rel="stylesheet" href="---your site folder ---/css/slider.css" type="text/css"&gt;<br>
+                    &lt;script src="---your site folder ---/js/slider.js" type="text/javascript"&gt;&lt;/script&gt;
+                    </div>
+                </li>
+                <li>
+                    <p>Plain your sliders content into simple structure and place it in code:</p>
+                    <div class="codeBlock">
+                        &lt;div id="yourSliderId" title="700" class="deftSlider"&gt;<br>
+                            &nbsp;&nbsp;&lt;div&gt; --- PLACE YOUR BLOCK HERE --- &lt;/div&gt;<br>
+                            &nbsp;&nbsp;&lt;div&gt; --- PLACE YOUR NEXT BLOCK --- &lt;/div&gt;<br>
+                            &nbsp;&nbsp;&lt;div&gt; --- OR ANOTHER BLOCK HERE --- &lt;/div&gt;<br>
+                        &lt;/div&gt;
+                    </div>
+                </li>
+            </ol>
+            <p>Every block, marked as "deftSlider" class, will be matched as element of "Deft Slider" class and will be transformed for correct functionality of module. Be carefull, and check your other CSS classes for coincidence. In header of slider declaration you can use special map of attributes for customize your slider, when:<br>
+            <b>id</b> - required tag, which identy your slider with personal settings;<br>
+            <b>title</b> - required tag, whiht set time interval in milliseconds of slide time;<br>
+            <b>class="deftSlider"</b> - requirred tag, which identy your constructions as "Deft Slider" element.</p>
+            <p>Every child element of "deftSlider" class perceive as separate container, when you will place your slide data. Be carefull and don't forget to close every container by closing tag with "/".<br>
+                Slide can work with different children structures, but better way - place every child in &lt;div&gt; container.
+        </section>
+    </main>
+</html>
